@@ -1,0 +1,100 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo img {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.close {
+  padding-right: 1rem;
+  display: none;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  height: 88vh;
+  position: relative;
+  top: 1.5rem;
+  transition: var(--transition);
+}
+
+.sidebar:hover {
+  box-shadow: none;
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  color: var(--color-info-dark);
+  height: 3.7rem;
+  gap: 1rem;
+  position: relative;
+  margin-left: 1.5rem;
+  transition: var(--transition);
+}
+
+.sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+.sidebar a:hover {
+  color: var(--color-primary);
+}
+
+.sidebar a svg {
+  transition: var(--transition);
+}
+
+.sidebar a:hover svg {
+  margin-left: 0.6rem;
+}
+
+a.active {
+  width: 100%;
+  color: var(--color-primary);
+  background-color: var(--color-light);
+  margin-left: 0;
+}
+
+a.active:first-child {
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+a.active::before {
+  content: '';
+  width: 6px;
+  height: 22px;
+  background-color: var(--color-primary);
+}
+
+a.active svg {
+  color: var(--color-primary);
+  margin-left: calc(1rem - 12px)
+}
+
+.sidebar .message-count {
+  background-color: var(--color-danger);
+  padding: 2px 6px;
+  color: var(--color-white);
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
+}
