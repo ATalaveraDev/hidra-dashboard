@@ -113,10 +113,3 @@ b {
   gap: 1.8rem;
   grid-template-columns: 13rem auto 23rem;
 }
-
-.aside {
-  --border-radius: 15px;
-  --transition: all 0.3s ease;
-
-  height: 100vh;
-}
