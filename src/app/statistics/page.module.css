@@ -1,0 +1,63 @@
+/* .statistic {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+} */
+
+.statistic h3 {
+  margin-left: 0.2rem;
+  font-size: 1rem;
+}
+
+.statistic > div {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  margin-top: 1rem;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.statistic > div:hover {
+  box-shadow: none;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+
+.progress svg {
+  width: 7rem;
+  height: 7rem;
+}
+
+.progress svg circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+  stroke: var(--color-success);
+  stroke-dashoffset: -60;
+  stroke-dasharray: 200;
+}
+
+.percentage {
+  position: absolute;
+  top: -3px;
+  left: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

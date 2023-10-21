@@ -21,11 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className={poppins.className}>
-        <main className='container'>
-          <aside className={classes.aside}>
-            <Sidebar />
-          </aside>
+      <body className={`${poppins.className} container`}>
+        <aside className={classes.aside}>
+          <Sidebar />
+        </aside>
+        <main>
           {children}
         </main>
       </body>

@@ -86,6 +86,10 @@ b {
   color: var(--color-dark);
 }
 
+main {
+  margin-top: 1.4rem;
+}
+
 .text-muted {
   color: var(--color-info-dark);
 }
